@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link id="100" rel="shortcut icon" href="https://home.army.mil/bragg/application/files/thumbnails/small/3016/0218/0169/JIB_LOGO_OFFICIAL_MTL.png" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="./webStyleSheet.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-bg"></div>
+            <ul>
+              <li><a href="./pictures.html">Pictures</a></li>
+              <li><a href="./members.html">Members</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./id.html">ID</a></li>
+              <li><a href="./home.html">Home</a></li>
+              <li id="adminPannel" style="display: none;"><a href="SECURED_ACCESS">Admin</a></li>
+            </ul>
+          </nav>
+          <div class="hero">
+          </div>
+          <div class="content-wrapper">
+            <div class="admin">
+                <div class="headerAdmin style-1Admin" style="color: orange;">UPLOAD NEWS</div>
+                <div class="headerAdmin style-2Admin"><textarea id="News_ID" placeholder="ID to Change" style="border: 5px rgb(82, 0, 0) solid; position: relative; bottom: 200%; width: 75%;"></textarea></div>
+                <div class="headerAdmin style-2Admin"><textarea id="Title" placeholder="Title" required style="border: 5px rgb(82, 0, 0) solid; position: relative; bottom: 200%;"></textarea></div>
+                <div class="headerAdmin style-2Admin"><textarea id="Text" placeholder="News Text" required style="border: 5px rgb(82, 0, 0) solid; position: relative; bottom: 200%; height: 1000%; right: 25%; width: 150%;"></textarea></div>
+                <textarea id="Image" placeholder="Image Link" required style="border: 5px rgb(82, 0, 0) solid; position: relative; top: 750%; right: 103%;"></textarea></div>
+                <button class="buttonUpload" required style="color: brown; position: relative; bottom: 16%; left: 40%; height: 5%; width: 20%;" onclick="Upload()">UPLOAD</button>
+                <div class="bar error" id="ErrNews" style="display: none; height: 3%; position: relative; bottom: 15%;">
+                    <div class="close" onclick="HideNews()">X</div>
+                    <i class="ico">&#8505;</i> Inexisting News ID
+                </div>
+                <div class="bar success" id="SuccessNews" style="display: none; height: 3%; position: relative; bottom: 15%;">
+                    <i class="ico">&#8505;</i> News Uploaded
+                </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div id="button"></div>
+          <div id="container">
+          <div id="cont">
+          <div class="footer_center">
+               <h3>© Made by <a href="https://github.com/Daegatoya">Mokmi</a></h3>
+          </div>
+          </div>
+          </div>
+          </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.4/socket.io.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="./JavaScript/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e6/Air_Intelligence_Agency.png" />
+        <title>Admin Panel</title>
+        <link rel="stylesheet" href="./webStyleSheet.css">
+    </head>
+<body>
+    <nav>
+        <div class="nav-bg"></div>
+        <ul>
+          <li><a href="./pictures.html">Pictures</a></li>
+          <li><a href="./members.html">Members</a></li>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./id.html">ID</a></li>
+          <li><a href="./home.html">Home</a></li>
+          <li id="adminPannel" style="display: none;"><a href="SECURED_ACCESS">Admin</a></li>
+        </ul>
+      </nav>
+    <div class="backgroundAdmin"></div>
+    <div class="admin">
+        <div class="logoAdmin"></div>
+        <div class="headerAdmin style-1Admin">ADMIN PANNEL</div>
+        <div class="headerAdmin style-2Admin"><textarea id="submission" placeholder="File's Name & Directory" required style="border:outset 4px rgb(0, 165, 96);"></textarea></div>
+        <button class="buttonAdmin" onclick="Search()">SEARCH FILE</button>
+        <div class="bar error" id="ErrAdmin" style="display: none;">
+          <div class="close" onclick="HideAdmin()">X</div>
+          <i class="ico">&#8505;</i> Inexisting File
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.4/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./JavaScript/admin.js">
+  </script>
+</body>
+</html>

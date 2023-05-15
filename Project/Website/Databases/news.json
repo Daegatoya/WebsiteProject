@@ -1,0 +1,34 @@
+{
+  "News": [
+    {
+      "News_ID": "1",
+      "Title": "Title1",
+      "Text": "News1",
+      "Image": "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+    },
+    {
+      "News_ID": "2",
+      "Title": "Title2",
+      "Text": "News2",
+      "Image": "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+    },
+    {
+      "News_ID": "5",
+      "Title": "Title5",
+      "Text": "News5",
+      "Image": "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+    },
+    {
+      "News_ID": "4",
+      "Title": "Title4",
+      "Text": "News4",
+      "Image": "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+    },
+    {
+      "News_ID": "3",
+      "Title": "Title3",
+      "Text": "News3",
+      "Image": "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+    }
+  ]
+}

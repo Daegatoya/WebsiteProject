@@ -1,0 +1,570 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  nav {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .2em 2em;
+    float: right;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: .10em .7em;
+  }
+  
+  nav a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 1.15em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: .25s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: rgba(255, 71, 71, 0.534);
+  }
+  
+  .nav-bg {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(70, 21, 21);
+    opacity: 10%;
+    transition: .45s ease-in-out;
+  }
+  
+  .bg-hidden {
+    top: -100%;
+    opacity: 0;
+  }
+  
+  .bg-visible {
+    top: 0;
+    opacity: 0.9;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Ubuntu;
+    letter-spacing: 1px;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: rgb(50, 50, 50);
+    background: url(./images/MIC.gif) no-repeat 50% 75% fixed;
+    background-size: 100%;
+    overflow: hidden;
+  }
+  
+  .content-wrapper {
+    width: 80%;
+    height: 1500px;
+    padding: 1em 10%;
+  }
+  
+  .content-wrapper h1 {
+    margin: 0;
+    color: rgb(220, 120, 0);
+  }
+
+  .content-wrapper p {
+    font-family: "Open Sans";
+    text-indent: 1.5em;
+    font-size: 1.2em;
+  }
+  
+  .content-wrapper iframe {
+    position: relative;
+    left: 33%;
+    top: 2%;
+  }
+
+  .news {
+    width: 80%;
+    height: 3000px;
+    padding: 1em 10%;
+    top: 3%;
+  }
+
+  .news h1 {
+    margin: 0;
+    position: relative;
+    color: rgb(220, 120, 0);
+    height: 100px;
+    top: 3%;
+  }
+  
+  .news img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border: #ffffff 5px solid;
+    opacity: 70%;
+  }
+
+  .news p {
+    position: relative;
+    font-family: "Open Sans";
+    text-indent: 1.5em;
+    font-size: 1.2em;
+    top: 3%;
+  }
+
+  .news button {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    width: 15%;
+    height: 2%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    border: 3px solid #B2782C;
+    background-color: rgba(222, 187, 99, 0);
+    color: #B2782C;
+    transition: 0.5s;
+    border-radius: 50px;
+    z-index: 1;
+  }
+
+  .news button:hover{
+    background-color: rgba(222, 187, 99, 0.29);
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.container {
+  display: grid;
+  padding-top: 15%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 25em 5em 5em 5em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  grid-column-start: 2;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgb(255, 255, 255);
+  background-image: url("./images/id_card.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.avatar {
+  z-index: 3;
+  position: absolute;
+  grid-column-start: 2;
+  display: block;
+  width: 12%;
+  height: 16.6%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 360px;
+  left: 415px;
+  border: 2px solid #ffffff;
+}
+
+.text {
+  z-index: 3;
+  position: absolute;
+  grid-column-start: 2;
+  display: block;
+  width: 50%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  font-size: 1.2em;
+}
+
+#content {
+  position: relative;
+}
+#content img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 2%;
+}
+
+.prop {
+  z-index: 3;
+  position: absolute;
+  grid-column-start: 2;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid #ffffff;
+  opacity: 50%; 
+}
+
+a {
+  color:rgb(220, 120, 0);
+  transition: .25s ease-in-out;
+}
+
+a:hover {
+  color: rgba(255, 71, 71, 0.534);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+.footer #button{
+	width:50px;
+	height:50px;
+	border: #424242 5px solid;
+	border-radius:50px;
+  background-image: url("./images/logo.png");
+  background-size: cover;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #131313 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #131313;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+.member {
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: 5px solid #ffffff;
+  opacity: 50%; 
+}
+
+.admin {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 16em 5em 5em 5em;
+  grid-gap: calc(25px + 0.390625vw);
+}
+
+.logoAdmin {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+
+  background-image: url("https://tr.rbxcdn.com/f86b98ea6503294f1efbbe75c8fc19aa/150/150/Image/Png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.backgroundAdmin {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i0.wp.com/aziobot.com/wp-content/uploads/2019/07/adobestock_173905768.jpeg?fit=4000%2C2000&ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  margin: 0;
+  z-index: 0;
+  animation: loop;
+  border-bottom: 5px solid darkblue;
+  animation-duration: 10s;
+  animation-delay: 0ms;
+  transition-timing-function: cubic-bezier(.88,.9,.68,-0.45);
+  animation-iteration-count: infinite;
+}
+
+.headerAdmin {
+  grid-column-start: 2;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.headerAdmin.style-1Admin {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-top: 3%;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.headerAdmin.style-2Admin {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-top: 3%;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+.headerAdmin.style-3Admin {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-top: 3%;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.buttonAdmin {
+  font-family: gotham;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: white;
+  width: 50%;
+  height: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  border: 3px solid #05b488;
+  background-color: rgba(222, 187, 99, 0);
+  color: #14d886;
+  transition: 0.5s;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.buttonUpload {
+  font-family: gotham;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: white;
+  width: 50%;
+  height: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  border: 3px solid #5f0000;
+  background-color: rgba(222, 187, 99, 0);
+  transition: 0.5s;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.buttonAdmin:hover{
+  background-color: rgba(6, 82, 38, 0.29);
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.buttonUpload:hover{
+  background-color: rgba(31, 3, 3, 0.637);
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+@keyframes loop{
+  100% {
+      width: 100%;
+  }
+
+  50% {
+      width: 120%;
+  }
+
+  25% {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .backgroundAdmin {
+      animation: none;
+  }
+  .logoAdmin {
+      width: 80%;
+  }
+  .headerAdmin.style-2Admin {
+      grid-column-start: 1;
+      grid-column-end: 4;
+  }
+  .buttonAdmin {
+      font-size: 1.3em;
+      width: 70%;
+  }
+  .buttonAdmin:hover{
+      font-size: 1.4em;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .backgroundAdmin {
+      animation: none;
+  }
+  .admin {
+      padding-top: 20%;
+  }
+  .logoAdmin {
+      width: 100%;
+  }
+  .headerAdmin.style-1Admin {
+      font-size: 2.7em;
+  }
+  .buttonAdmin {
+      font-size: 1.1em;
+      width: 100%;
+  }
+ .buttonAdmin:hover{
+      font-size: 1.2em;
+  }
+}
+
+textarea {
+  resize: none;
+  font-size:50px;
+  width: 90%;
+  height: 100%;
+}
+
+.bar {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: #333;
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.bar { position: relative; }
+div.close {
+  position: absolute;
+  top: 7%;
+  right: 10px;
+  margin: 0 auto;
+  color: #888;
+  cursor: pointer;
+}
+
+i.ico {
+  display: inline-block;
+  width: 20px;
+  text-align: center; 
+  font-style: normal;
+  font-weight: bold;
+}
+
+.error {
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+}
+
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.success {
+  color: #006917;
+  background: #b1ffd1;
+  border: 1px solid #00a529;
+}

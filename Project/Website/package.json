@@ -1,0 +1,25 @@
+{
+  "name": "mic_website",
+  "version": "1.0.0",
+  "description": "Lol it's cool",
+  "main": "backend.js",
+  "scripts": {
+    "test": "node backend.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "SECURED_ACCESS"
+  },
+  "dependencies": {
+    "lowdb": "1.0.0",
+    "express": "4.18.2",
+    "socket.io": "1.3.4",
+    "path": "0.12.7",
+    "body-parser": "1.20.1"
+  },
+    "engines": {
+    "node": "18.12.1"
+  },
+  "author": "Mokmi/Daegatoya",
+  "license": "ISC"
+}

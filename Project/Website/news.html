@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link id="100" rel="shortcut icon" href="https://home.army.mil/bragg/application/files/thumbnails/small/3016/0218/0169/JIB_LOGO_OFFICIAL_MTL.png" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="./webStyleSheet.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-bg"></div>
+            <ul>
+              <li><a href="./pictures.html">Pictures</a></li>
+              <li><a href="./members.html">Members</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./id.html">ID</a></li>
+              <li><a href="./home.html">Home</a></li>
+              <li id="adminPannel" style="display: none;"><a href="SECURED_ACCESS">Admin</a></li>
+            </ul>
+          </nav>
+          <div class="hero">
+          </div>
+          <div class="news">
+            <h1 id="adminMessage" style="color:rgb(119, 0, 0); top: 0%; display: none;">You are an admin</h1>
+            <button id="uploadButton" style="display: none;" onclick="Redirect()">Upload a News</button>
+            <h1 id="news1T">News1T</h1>
+            <p id="news1P">News1P</p>
+            <img id="news1I" src="./images/logo.png">
+            <h1 id="news2T">News2T</h1>
+            <p id="news2P">News2P</p>
+            <img id="news2I" src="./images/logo.png">
+            <h1 id="news3T">News3T</h1>
+            <p id="news3P">News3P</p>
+            <img id="news3I" src="./images/logo.png">
+            <h1 id="news4T">News4T</h1>
+            <p id="news4P">News4P</p>
+            <img id="news4I" src="./images/logo.png">
+            <h1 id="news5T">News5T</h1>
+            <p id="news5P">News5P</p>
+            <img id="news5I" src="./images/logo.png">
+          </div>
+          <div class="footer">
+            <div id="button"></div>
+          <div id="container">
+          <div id="cont">
+          <div class="footer_center">
+               <h3>© Made by <a href="https://github.com/Daegatoya">Mokmi</a></h3>
+          </div>
+          </div>
+          </div>
+          </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.4/socket.io.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="./JavaScript/news.js"></script>
+</body>
+</html>
