@@ -34,9 +34,9 @@ $(document).ready(function() {
       adminPannel.style.display="inline-block";
       $(document).ready(function(){
           $('a[href^="SECURED_ACCESS"]').each(function(){ 
-              var oldUrl = $(this).attr("href"); // Get current url
-              oldUrl.replace("http://", "https://"); // Create 
-              $(this).attr("href", "./admin.html"); // Set herf value
+              var oldUrl = $(this).attr("href");
+              oldUrl.replace("http://", "https://");
+              $(this).attr("href", "./admin.html");
           });
       });
   }
